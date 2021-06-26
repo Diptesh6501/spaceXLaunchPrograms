@@ -1,0 +1,31 @@
+.filter-container {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    .grid-list {
+        display: grid;
+        grid-template-columns: 60px 60px;
+        justify-items: center;
+        justify-content: center;
+
+        .item {
+            margin-bottom: 8px;
+            background-color: lightgreen;
+            padding: 8px;
+            width: 30px;
+            font-size: 13px;
+            border-radius: 8px;
+        }
+
+        .selected-item {
+            background-color: green;
+        }
+    }
+
+    .centered-title {
+        text-align: center;
+        border-bottom: 1px solid #00000073;
+    }
+}

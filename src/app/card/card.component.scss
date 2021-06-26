@@ -1,0 +1,35 @@
+.card {
+    background-color: white;
+    width: 80%;
+    height: 86%;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    .card-image {
+        width: 180px;
+        height: 180px;
+        background-color: #eee;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .card-header-title {
+        font-weight: bold;
+        color: #0000ffa3;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 8px 0px 8px 0px
+    }
+
+    .text-in-card {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

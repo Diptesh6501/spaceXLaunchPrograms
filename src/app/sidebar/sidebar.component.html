@@ -1,0 +1,27 @@
+<div class="filter-container">
+    <h4><b>Filters</b></h4>
+    <h5 class="centered-title">Launch year</h5>
+    <div class="grid-list">
+        <div class="item" *ngFor="let y of years" (click)="emitFilterParameters({year:y.year})" [ngClass]="y.selected === true ? 'selected-item': ''">
+            {{y.year}}
+        </div>
+    </div>
+    <h5 class="centered-title">Sucessful Launch</h5>
+    <div class="grid-list">
+        <div class="item" (click)="emitFilterParameters({sucessfulLaunch: true})">
+            True
+        </div>
+        <div class="item" (click)="emitFilterParameters({sucessfulLaunch: false})">
+            false
+        </div>
+    </div>
+    <h5 class="centered-title">Sucessful Landing</h5>
+    <div class="grid-list">
+        <div class="item" (click)="emitFilterParameters({sucessfulLanding: true})">
+            True
+        </div>
+        <div class="item" (click)="emitFilterParameters({sucessfulLanding: false})">
+            false
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="card">
+    <img class="card-image" src={{list.links.mission_patch_small}}>
+    <div class="card-header-title">{{list.mission_name}} #{{list.flight_number}}</div>
+        <div *ngIf="list.mission_id.length">
+        <div class="text-in-card">MissionIds</div>
+        <ul *ngFor="let missonId of list.mission_id">
+            <li>{{missonId}}</li>
+        </ul>
+    </div>
+    <div *ngIf="list.launch_year" class="text-in-card">Launch year : {{list.launch_year}}</div>
+    <div *ngIf="list.land_success" class="text-in-card">SucessFul Landing: {{list.land_success}}</div>
+    <div *ngIf="list.launch_success" class="text-in-card">sucessFul Launch: {{list.launch_success}}</div>
+</div>
